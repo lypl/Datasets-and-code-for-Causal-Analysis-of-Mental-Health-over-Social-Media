@@ -1,0 +1,367 @@
+[
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/4/checkpoint-500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have nothing because of no reason ."
+            ],
+            "1": [
+                "I have nothing because of body shame .",
+                "I have nothing because of physical abuse .",
+                "I have nothing because of sexual abuse .",
+                "I have nothing because of emotional abuse ."
+            ],
+            "2": [
+                "I have nothing because of loans .",
+                "I have nothing because of poor .",
+                "I have nothing because of financial problem .",
+                "I have nothing because of unemployment .",
+                "I have nothing because of bully .",
+                "I have nothing because of  gossip .",
+                "I have nothing because of bad job .",
+                "I have nothing because of poor grades .",
+                "I have nothing because of educational problem .",
+                "I have nothing because of dictatorial management ."
+            ],
+            "3": [
+                "I have nothing because of drug .",
+                "I have nothing because of medication .",
+                "I have nothing because of tumor .",
+                "I have nothing because of cancer .",
+                "I have nothing because of disease .",
+                "I have nothing because of alcohol addiction .",
+                "I have nothing because of smoke ."
+            ],
+            "4": [
+                "I have nothing because of bad parenting .",
+                "I have nothing because of breakups .",
+                "I have nothing because of divorce .",
+                "I have nothing because of mistrust .",
+                "I have nothing because of jealousy .",
+                "I have nothing because of betrayal .",
+                "I have nothing because of conflict .",
+                "I have nothing because of fight .",
+                "I have nothing because of childhood trauma ."
+            ],
+            "5": [
+                "I have nothing because of worthless .",
+                "I have nothing because of lonely .",
+                "I have nothing because of tired  of daily .",
+                "I have nothing because of powerless .",
+                "I have nothing because of normless .",
+                "I have nothing because of  isolation .",
+                "I have nothing because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6158238172920065,
+        "except_0_class_is_key_stc_accuracy": 0.6158238172920065,
+        "negative_threshold": 0.2782782782782783
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/4/checkpoint-1000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have nothing because of no reason ."
+            ],
+            "1": [
+                "I have nothing because of body shame .",
+                "I have nothing because of physical abuse .",
+                "I have nothing because of sexual abuse .",
+                "I have nothing because of emotional abuse ."
+            ],
+            "2": [
+                "I have nothing because of loans .",
+                "I have nothing because of poor .",
+                "I have nothing because of financial problem .",
+                "I have nothing because of unemployment .",
+                "I have nothing because of bully .",
+                "I have nothing because of  gossip .",
+                "I have nothing because of bad job .",
+                "I have nothing because of poor grades .",
+                "I have nothing because of educational problem .",
+                "I have nothing because of dictatorial management ."
+            ],
+            "3": [
+                "I have nothing because of drug .",
+                "I have nothing because of medication .",
+                "I have nothing because of tumor .",
+                "I have nothing because of cancer .",
+                "I have nothing because of disease .",
+                "I have nothing because of alcohol addiction .",
+                "I have nothing because of smoke ."
+            ],
+            "4": [
+                "I have nothing because of bad parenting .",
+                "I have nothing because of breakups .",
+                "I have nothing because of divorce .",
+                "I have nothing because of mistrust .",
+                "I have nothing because of jealousy .",
+                "I have nothing because of betrayal .",
+                "I have nothing because of conflict .",
+                "I have nothing because of fight .",
+                "I have nothing because of childhood trauma ."
+            ],
+            "5": [
+                "I have nothing because of worthless .",
+                "I have nothing because of lonely .",
+                "I have nothing because of tired  of daily .",
+                "I have nothing because of powerless .",
+                "I have nothing because of normless .",
+                "I have nothing because of  isolation .",
+                "I have nothing because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6182707993474714,
+        "except_0_class_is_key_stc_accuracy": 0.6182707993474714,
+        "negative_threshold": 0.33933933933933935
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/4/checkpoint-1500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have nothing because of no reason ."
+            ],
+            "1": [
+                "I have nothing because of body shame .",
+                "I have nothing because of physical abuse .",
+                "I have nothing because of sexual abuse .",
+                "I have nothing because of emotional abuse ."
+            ],
+            "2": [
+                "I have nothing because of loans .",
+                "I have nothing because of poor .",
+                "I have nothing because of financial problem .",
+                "I have nothing because of unemployment .",
+                "I have nothing because of bully .",
+                "I have nothing because of  gossip .",
+                "I have nothing because of bad job .",
+                "I have nothing because of poor grades .",
+                "I have nothing because of educational problem .",
+                "I have nothing because of dictatorial management ."
+            ],
+            "3": [
+                "I have nothing because of drug .",
+                "I have nothing because of medication .",
+                "I have nothing because of tumor .",
+                "I have nothing because of cancer .",
+                "I have nothing because of disease .",
+                "I have nothing because of alcohol addiction .",
+                "I have nothing because of smoke ."
+            ],
+            "4": [
+                "I have nothing because of bad parenting .",
+                "I have nothing because of breakups .",
+                "I have nothing because of divorce .",
+                "I have nothing because of mistrust .",
+                "I have nothing because of jealousy .",
+                "I have nothing because of betrayal .",
+                "I have nothing because of conflict .",
+                "I have nothing because of fight .",
+                "I have nothing because of childhood trauma ."
+            ],
+            "5": [
+                "I have nothing because of worthless .",
+                "I have nothing because of lonely .",
+                "I have nothing because of tired  of daily .",
+                "I have nothing because of powerless .",
+                "I have nothing because of normless .",
+                "I have nothing because of  isolation .",
+                "I have nothing because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6158238172920065,
+        "except_0_class_is_key_stc_accuracy": 0.6158238172920065,
+        "negative_threshold": 0.3663663663663664
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/4/checkpoint-2000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have nothing because of no reason ."
+            ],
+            "1": [
+                "I have nothing because of body shame .",
+                "I have nothing because of physical abuse .",
+                "I have nothing because of sexual abuse .",
+                "I have nothing because of emotional abuse ."
+            ],
+            "2": [
+                "I have nothing because of loans .",
+                "I have nothing because of poor .",
+                "I have nothing because of financial problem .",
+                "I have nothing because of unemployment .",
+                "I have nothing because of bully .",
+                "I have nothing because of  gossip .",
+                "I have nothing because of bad job .",
+                "I have nothing because of poor grades .",
+                "I have nothing because of educational problem .",
+                "I have nothing because of dictatorial management ."
+            ],
+            "3": [
+                "I have nothing because of drug .",
+                "I have nothing because of medication .",
+                "I have nothing because of tumor .",
+                "I have nothing because of cancer .",
+                "I have nothing because of disease .",
+                "I have nothing because of alcohol addiction .",
+                "I have nothing because of smoke ."
+            ],
+            "4": [
+                "I have nothing because of bad parenting .",
+                "I have nothing because of breakups .",
+                "I have nothing because of divorce .",
+                "I have nothing because of mistrust .",
+                "I have nothing because of jealousy .",
+                "I have nothing because of betrayal .",
+                "I have nothing because of conflict .",
+                "I have nothing because of fight .",
+                "I have nothing because of childhood trauma ."
+            ],
+            "5": [
+                "I have nothing because of worthless .",
+                "I have nothing because of lonely .",
+                "I have nothing because of tired  of daily .",
+                "I have nothing because of powerless .",
+                "I have nothing because of normless .",
+                "I have nothing because of  isolation .",
+                "I have nothing because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6163675910821098,
+        "except_0_class_is_key_stc_accuracy": 0.6163675910821098,
+        "negative_threshold": 0.4044044044044044
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/4/checkpoint-2500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have nothing because of no reason ."
+            ],
+            "1": [
+                "I have nothing because of body shame .",
+                "I have nothing because of physical abuse .",
+                "I have nothing because of sexual abuse .",
+                "I have nothing because of emotional abuse ."
+            ],
+            "2": [
+                "I have nothing because of loans .",
+                "I have nothing because of poor .",
+                "I have nothing because of financial problem .",
+                "I have nothing because of unemployment .",
+                "I have nothing because of bully .",
+                "I have nothing because of  gossip .",
+                "I have nothing because of bad job .",
+                "I have nothing because of poor grades .",
+                "I have nothing because of educational problem .",
+                "I have nothing because of dictatorial management ."
+            ],
+            "3": [
+                "I have nothing because of drug .",
+                "I have nothing because of medication .",
+                "I have nothing because of tumor .",
+                "I have nothing because of cancer .",
+                "I have nothing because of disease .",
+                "I have nothing because of alcohol addiction .",
+                "I have nothing because of smoke ."
+            ],
+            "4": [
+                "I have nothing because of bad parenting .",
+                "I have nothing because of breakups .",
+                "I have nothing because of divorce .",
+                "I have nothing because of mistrust .",
+                "I have nothing because of jealousy .",
+                "I have nothing because of betrayal .",
+                "I have nothing because of conflict .",
+                "I have nothing because of fight .",
+                "I have nothing because of childhood trauma ."
+            ],
+            "5": [
+                "I have nothing because of worthless .",
+                "I have nothing because of lonely .",
+                "I have nothing because of tired  of daily .",
+                "I have nothing because of powerless .",
+                "I have nothing because of normless .",
+                "I have nothing because of  isolation .",
+                "I have nothing because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.612289287656335,
+        "except_0_class_is_key_stc_accuracy": 0.612289287656335,
+        "negative_threshold": 0.4994994994994995
+    }
+]

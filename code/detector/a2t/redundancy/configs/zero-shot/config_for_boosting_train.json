@@ -1,0 +1,73 @@
+[
+    {
+        "name": "roberta-large-mnli",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/roberta-large-mnli",
+        "batch_size": 4,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "use_threshold": false,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I have to leave due to no reason ."
+            ],
+            "1": [
+                "I have to leave due to body shame .",
+                "I have to leave due to physical abuse .",
+                "I have to leave due to sexual abuse .",
+                "I have to leave due to emotional abuse ."
+            ],
+            "2": [
+                "I have to leave due to loans .",
+                "I have to leave due to poverty .",
+                "I have to leave due to financial problem .",
+                "I have to leave due to unemployment .",
+                "I have to leave due to bully .",
+                "I have to leave due to  gossip .",
+                "I have to leave due to bad job .",
+                "I have to leave due to poor grades .",
+                "I have to leave due to educational problem .",
+                "I have to leave due to dictatorial management ."
+            ],
+            "3": [
+                "I have to leave due to drug .",
+                "I have to leave due to medication .",
+                "I have to leave due to tumor .",
+                "I have to leave due to cancer .",
+                "I have to leave due to disease .",
+                "I have to leave due to alcohol addiction .",
+                "I have to leave due to smoke ."
+            ],
+            "4": [
+                "I have to leave due to bad parenting .",
+                "I have to leave due to breakup .",
+                "I have to leave due to divorce .",
+                "I have to leave due to mistrust .",
+                "I have to leave due to jealousy .",
+                "I have to leave due to betrayal .",
+                "I have to leave due to conflict .",
+                "I have to leave due to fight .",
+                "I have to leave due to childhood trauma ."
+            ],
+            "5": [
+                "I have to leave due to worthless .",
+                "I have to leave due to lonely .",
+                "I have to leave due to tired  of daily .",
+                "I have to leave due to powerless .",
+                "I have to leave due to normless .",
+                "I have to leave due to  isolation .",
+                "I have to leave due to estrangement ."
+            ]
+        }
+    }
+]

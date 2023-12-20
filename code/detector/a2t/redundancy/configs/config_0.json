@@ -1,0 +1,367 @@
+[
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/0/checkpoint-500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm going to die due to no reason ."
+            ],
+            "1": [
+                "I'm going to die due to body shame .",
+                "I'm going to die due to physical abuse .",
+                "I'm going to die due to sexual abuse .",
+                "I'm going to die due to emotional abuse ."
+            ],
+            "2": [
+                "I'm going to die due to loans .",
+                "I'm going to die due to poor .",
+                "I'm going to die due to financial problem .",
+                "I'm going to die due to unemployment .",
+                "I'm going to die due to bully .",
+                "I'm going to die due to  gossip .",
+                "I'm going to die due to bad job .",
+                "I'm going to die due to poor grades .",
+                "I'm going to die due to educational problem .",
+                "I'm going to die due to dictatorial management ."
+            ],
+            "3": [
+                "I'm going to die due to drug .",
+                "I'm going to die due to medication .",
+                "I'm going to die due to tumor .",
+                "I'm going to die due to cancer .",
+                "I'm going to die due to disease .",
+                "I'm going to die due to alcohol addiction .",
+                "I'm going to die due to smoke ."
+            ],
+            "4": [
+                "I'm going to die due to bad parenting .",
+                "I'm going to die due to breakups .",
+                "I'm going to die due to divorce .",
+                "I'm going to die due to mistrust .",
+                "I'm going to die due to jealousy .",
+                "I'm going to die due to betrayal .",
+                "I'm going to die due to conflict .",
+                "I'm going to die due to fight .",
+                "I'm going to die due to childhood trauma ."
+            ],
+            "5": [
+                "I'm going to die due to worthless .",
+                "I'm going to die due to lonely .",
+                "I'm going to die due to tired  of daily .",
+                "I'm going to die due to powerless .",
+                "I'm going to die due to normless .",
+                "I'm going to die due to  isolation .",
+                "I'm going to die due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6027732463295269,
+        "except_0_class_is_key_stc_accuracy": 0.6027732463295269,
+        "negative_threshold": 0.45145145145145144
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/0/checkpoint-1000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm going to die due to no reason ."
+            ],
+            "1": [
+                "I'm going to die due to body shame .",
+                "I'm going to die due to physical abuse .",
+                "I'm going to die due to sexual abuse .",
+                "I'm going to die due to emotional abuse ."
+            ],
+            "2": [
+                "I'm going to die due to loans .",
+                "I'm going to die due to poor .",
+                "I'm going to die due to financial problem .",
+                "I'm going to die due to unemployment .",
+                "I'm going to die due to bully .",
+                "I'm going to die due to  gossip .",
+                "I'm going to die due to bad job .",
+                "I'm going to die due to poor grades .",
+                "I'm going to die due to educational problem .",
+                "I'm going to die due to dictatorial management ."
+            ],
+            "3": [
+                "I'm going to die due to drug .",
+                "I'm going to die due to medication .",
+                "I'm going to die due to tumor .",
+                "I'm going to die due to cancer .",
+                "I'm going to die due to disease .",
+                "I'm going to die due to alcohol addiction .",
+                "I'm going to die due to smoke ."
+            ],
+            "4": [
+                "I'm going to die due to bad parenting .",
+                "I'm going to die due to breakups .",
+                "I'm going to die due to divorce .",
+                "I'm going to die due to mistrust .",
+                "I'm going to die due to jealousy .",
+                "I'm going to die due to betrayal .",
+                "I'm going to die due to conflict .",
+                "I'm going to die due to fight .",
+                "I'm going to die due to childhood trauma ."
+            ],
+            "5": [
+                "I'm going to die due to worthless .",
+                "I'm going to die due to lonely .",
+                "I'm going to die due to tired  of daily .",
+                "I'm going to die due to powerless .",
+                "I'm going to die due to normless .",
+                "I'm going to die due to  isolation .",
+                "I'm going to die due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6071234366503534,
+        "except_0_class_is_key_stc_accuracy": 0.6071234366503534,
+        "negative_threshold": 0.33933933933933935
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/0/checkpoint-1500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm going to die due to no reason ."
+            ],
+            "1": [
+                "I'm going to die due to body shame .",
+                "I'm going to die due to physical abuse .",
+                "I'm going to die due to sexual abuse .",
+                "I'm going to die due to emotional abuse ."
+            ],
+            "2": [
+                "I'm going to die due to loans .",
+                "I'm going to die due to poor .",
+                "I'm going to die due to financial problem .",
+                "I'm going to die due to unemployment .",
+                "I'm going to die due to bully .",
+                "I'm going to die due to  gossip .",
+                "I'm going to die due to bad job .",
+                "I'm going to die due to poor grades .",
+                "I'm going to die due to educational problem .",
+                "I'm going to die due to dictatorial management ."
+            ],
+            "3": [
+                "I'm going to die due to drug .",
+                "I'm going to die due to medication .",
+                "I'm going to die due to tumor .",
+                "I'm going to die due to cancer .",
+                "I'm going to die due to disease .",
+                "I'm going to die due to alcohol addiction .",
+                "I'm going to die due to smoke ."
+            ],
+            "4": [
+                "I'm going to die due to bad parenting .",
+                "I'm going to die due to breakups .",
+                "I'm going to die due to divorce .",
+                "I'm going to die due to mistrust .",
+                "I'm going to die due to jealousy .",
+                "I'm going to die due to betrayal .",
+                "I'm going to die due to conflict .",
+                "I'm going to die due to fight .",
+                "I'm going to die due to childhood trauma ."
+            ],
+            "5": [
+                "I'm going to die due to worthless .",
+                "I'm going to die due to lonely .",
+                "I'm going to die due to tired  of daily .",
+                "I'm going to die due to powerless .",
+                "I'm going to die due to normless .",
+                "I'm going to die due to  isolation .",
+                "I'm going to die due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6038607939097336,
+        "except_0_class_is_key_stc_accuracy": 0.6038607939097336,
+        "negative_threshold": 0.5965965965965966
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/0/checkpoint-2000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm going to die due to no reason ."
+            ],
+            "1": [
+                "I'm going to die due to body shame .",
+                "I'm going to die due to physical abuse .",
+                "I'm going to die due to sexual abuse .",
+                "I'm going to die due to emotional abuse ."
+            ],
+            "2": [
+                "I'm going to die due to loans .",
+                "I'm going to die due to poor .",
+                "I'm going to die due to financial problem .",
+                "I'm going to die due to unemployment .",
+                "I'm going to die due to bully .",
+                "I'm going to die due to  gossip .",
+                "I'm going to die due to bad job .",
+                "I'm going to die due to poor grades .",
+                "I'm going to die due to educational problem .",
+                "I'm going to die due to dictatorial management ."
+            ],
+            "3": [
+                "I'm going to die due to drug .",
+                "I'm going to die due to medication .",
+                "I'm going to die due to tumor .",
+                "I'm going to die due to cancer .",
+                "I'm going to die due to disease .",
+                "I'm going to die due to alcohol addiction .",
+                "I'm going to die due to smoke ."
+            ],
+            "4": [
+                "I'm going to die due to bad parenting .",
+                "I'm going to die due to breakups .",
+                "I'm going to die due to divorce .",
+                "I'm going to die due to mistrust .",
+                "I'm going to die due to jealousy .",
+                "I'm going to die due to betrayal .",
+                "I'm going to die due to conflict .",
+                "I'm going to die due to fight .",
+                "I'm going to die due to childhood trauma ."
+            ],
+            "5": [
+                "I'm going to die due to worthless .",
+                "I'm going to die due to lonely .",
+                "I'm going to die due to tired  of daily .",
+                "I'm going to die due to powerless .",
+                "I'm going to die due to normless .",
+                "I'm going to die due to  isolation .",
+                "I'm going to die due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6049483414899401,
+        "except_0_class_is_key_stc_accuracy": 0.6049483414899401,
+        "negative_threshold": 0.5245245245245245
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/0/checkpoint-2500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm going to die due to no reason ."
+            ],
+            "1": [
+                "I'm going to die due to body shame .",
+                "I'm going to die due to physical abuse .",
+                "I'm going to die due to sexual abuse .",
+                "I'm going to die due to emotional abuse ."
+            ],
+            "2": [
+                "I'm going to die due to loans .",
+                "I'm going to die due to poor .",
+                "I'm going to die due to financial problem .",
+                "I'm going to die due to unemployment .",
+                "I'm going to die due to bully .",
+                "I'm going to die due to  gossip .",
+                "I'm going to die due to bad job .",
+                "I'm going to die due to poor grades .",
+                "I'm going to die due to educational problem .",
+                "I'm going to die due to dictatorial management ."
+            ],
+            "3": [
+                "I'm going to die due to drug .",
+                "I'm going to die due to medication .",
+                "I'm going to die due to tumor .",
+                "I'm going to die due to cancer .",
+                "I'm going to die due to disease .",
+                "I'm going to die due to alcohol addiction .",
+                "I'm going to die due to smoke ."
+            ],
+            "4": [
+                "I'm going to die due to bad parenting .",
+                "I'm going to die due to breakups .",
+                "I'm going to die due to divorce .",
+                "I'm going to die due to mistrust .",
+                "I'm going to die due to jealousy .",
+                "I'm going to die due to betrayal .",
+                "I'm going to die due to conflict .",
+                "I'm going to die due to fight .",
+                "I'm going to die due to childhood trauma ."
+            ],
+            "5": [
+                "I'm going to die due to worthless .",
+                "I'm going to die due to lonely .",
+                "I'm going to die due to tired  of daily .",
+                "I'm going to die due to powerless .",
+                "I'm going to die due to normless .",
+                "I'm going to die due to  isolation .",
+                "I'm going to die due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6035889070146819,
+        "except_0_class_is_key_stc_accuracy": 0.6035889070146819,
+        "negative_threshold": 0.8158158158158159
+    }
+]

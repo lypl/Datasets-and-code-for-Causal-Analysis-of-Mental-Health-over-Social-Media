@@ -1,0 +1,367 @@
+[
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/2/checkpoint-500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I feel bad because of no reason ."
+            ],
+            "1": [
+                "I feel bad because of body shame .",
+                "I feel bad because of physical abuse .",
+                "I feel bad because of sexual abuse .",
+                "I feel bad because of emotional abuse ."
+            ],
+            "2": [
+                "I feel bad because of loans .",
+                "I feel bad because of poor .",
+                "I feel bad because of financial problem .",
+                "I feel bad because of unemployment .",
+                "I feel bad because of bully .",
+                "I feel bad because of  gossip .",
+                "I feel bad because of bad job .",
+                "I feel bad because of poor grades .",
+                "I feel bad because of educational problem .",
+                "I feel bad because of dictatorial management ."
+            ],
+            "3": [
+                "I feel bad because of drug .",
+                "I feel bad because of medication .",
+                "I feel bad because of tumor .",
+                "I feel bad because of cancer .",
+                "I feel bad because of disease .",
+                "I feel bad because of alcohol addiction .",
+                "I feel bad because of smoke ."
+            ],
+            "4": [
+                "I feel bad because of bad parenting .",
+                "I feel bad because of breakups .",
+                "I feel bad because of divorce .",
+                "I feel bad because of mistrust .",
+                "I feel bad because of jealousy .",
+                "I feel bad because of betrayal .",
+                "I feel bad because of conflict .",
+                "I feel bad because of fight .",
+                "I feel bad because of childhood trauma ."
+            ],
+            "5": [
+                "I feel bad because of worthless .",
+                "I feel bad because of lonely .",
+                "I feel bad because of tired  of daily .",
+                "I feel bad because of powerless .",
+                "I feel bad because of normless .",
+                "I feel bad because of  isolation .",
+                "I feel bad because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6182707993474714,
+        "except_0_class_is_key_stc_accuracy": 0.6182707993474714,
+        "negative_threshold": 0.42042042042042044
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/2/checkpoint-1000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I feel bad because of no reason ."
+            ],
+            "1": [
+                "I feel bad because of body shame .",
+                "I feel bad because of physical abuse .",
+                "I feel bad because of sexual abuse .",
+                "I feel bad because of emotional abuse ."
+            ],
+            "2": [
+                "I feel bad because of loans .",
+                "I feel bad because of poor .",
+                "I feel bad because of financial problem .",
+                "I feel bad because of unemployment .",
+                "I feel bad because of bully .",
+                "I feel bad because of  gossip .",
+                "I feel bad because of bad job .",
+                "I feel bad because of poor grades .",
+                "I feel bad because of educational problem .",
+                "I feel bad because of dictatorial management ."
+            ],
+            "3": [
+                "I feel bad because of drug .",
+                "I feel bad because of medication .",
+                "I feel bad because of tumor .",
+                "I feel bad because of cancer .",
+                "I feel bad because of disease .",
+                "I feel bad because of alcohol addiction .",
+                "I feel bad because of smoke ."
+            ],
+            "4": [
+                "I feel bad because of bad parenting .",
+                "I feel bad because of breakups .",
+                "I feel bad because of divorce .",
+                "I feel bad because of mistrust .",
+                "I feel bad because of jealousy .",
+                "I feel bad because of betrayal .",
+                "I feel bad because of conflict .",
+                "I feel bad because of fight .",
+                "I feel bad because of childhood trauma ."
+            ],
+            "5": [
+                "I feel bad because of worthless .",
+                "I feel bad because of lonely .",
+                "I feel bad because of tired  of daily .",
+                "I feel bad because of powerless .",
+                "I feel bad because of normless .",
+                "I feel bad because of  isolation .",
+                "I feel bad because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6174551386623165,
+        "except_0_class_is_key_stc_accuracy": 0.6174551386623165,
+        "negative_threshold": 0.3913913913913914
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/2/checkpoint-1500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I feel bad because of no reason ."
+            ],
+            "1": [
+                "I feel bad because of body shame .",
+                "I feel bad because of physical abuse .",
+                "I feel bad because of sexual abuse .",
+                "I feel bad because of emotional abuse ."
+            ],
+            "2": [
+                "I feel bad because of loans .",
+                "I feel bad because of poor .",
+                "I feel bad because of financial problem .",
+                "I feel bad because of unemployment .",
+                "I feel bad because of bully .",
+                "I feel bad because of  gossip .",
+                "I feel bad because of bad job .",
+                "I feel bad because of poor grades .",
+                "I feel bad because of educational problem .",
+                "I feel bad because of dictatorial management ."
+            ],
+            "3": [
+                "I feel bad because of drug .",
+                "I feel bad because of medication .",
+                "I feel bad because of tumor .",
+                "I feel bad because of cancer .",
+                "I feel bad because of disease .",
+                "I feel bad because of alcohol addiction .",
+                "I feel bad because of smoke ."
+            ],
+            "4": [
+                "I feel bad because of bad parenting .",
+                "I feel bad because of breakups .",
+                "I feel bad because of divorce .",
+                "I feel bad because of mistrust .",
+                "I feel bad because of jealousy .",
+                "I feel bad because of betrayal .",
+                "I feel bad because of conflict .",
+                "I feel bad because of fight .",
+                "I feel bad because of childhood trauma ."
+            ],
+            "5": [
+                "I feel bad because of worthless .",
+                "I feel bad because of lonely .",
+                "I feel bad because of tired  of daily .",
+                "I feel bad because of powerless .",
+                "I feel bad because of normless .",
+                "I feel bad because of  isolation .",
+                "I feel bad because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6177270255573681,
+        "except_0_class_is_key_stc_accuracy": 0.6177270255573681,
+        "negative_threshold": 0.3923923923923924
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/2/checkpoint-2000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I feel bad because of no reason ."
+            ],
+            "1": [
+                "I feel bad because of body shame .",
+                "I feel bad because of physical abuse .",
+                "I feel bad because of sexual abuse .",
+                "I feel bad because of emotional abuse ."
+            ],
+            "2": [
+                "I feel bad because of loans .",
+                "I feel bad because of poor .",
+                "I feel bad because of financial problem .",
+                "I feel bad because of unemployment .",
+                "I feel bad because of bully .",
+                "I feel bad because of  gossip .",
+                "I feel bad because of bad job .",
+                "I feel bad because of poor grades .",
+                "I feel bad because of educational problem .",
+                "I feel bad because of dictatorial management ."
+            ],
+            "3": [
+                "I feel bad because of drug .",
+                "I feel bad because of medication .",
+                "I feel bad because of tumor .",
+                "I feel bad because of cancer .",
+                "I feel bad because of disease .",
+                "I feel bad because of alcohol addiction .",
+                "I feel bad because of smoke ."
+            ],
+            "4": [
+                "I feel bad because of bad parenting .",
+                "I feel bad because of breakups .",
+                "I feel bad because of divorce .",
+                "I feel bad because of mistrust .",
+                "I feel bad because of jealousy .",
+                "I feel bad because of betrayal .",
+                "I feel bad because of conflict .",
+                "I feel bad because of fight .",
+                "I feel bad because of childhood trauma ."
+            ],
+            "5": [
+                "I feel bad because of worthless .",
+                "I feel bad because of lonely .",
+                "I feel bad because of tired  of daily .",
+                "I feel bad because of powerless .",
+                "I feel bad because of normless .",
+                "I feel bad because of  isolation .",
+                "I feel bad because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6158238172920065,
+        "except_0_class_is_key_stc_accuracy": 0.6158238172920065,
+        "negative_threshold": 0.4394394394394394
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/2/checkpoint-2500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I feel bad because of no reason ."
+            ],
+            "1": [
+                "I feel bad because of body shame .",
+                "I feel bad because of physical abuse .",
+                "I feel bad because of sexual abuse .",
+                "I feel bad because of emotional abuse ."
+            ],
+            "2": [
+                "I feel bad because of loans .",
+                "I feel bad because of poor .",
+                "I feel bad because of financial problem .",
+                "I feel bad because of unemployment .",
+                "I feel bad because of bully .",
+                "I feel bad because of  gossip .",
+                "I feel bad because of bad job .",
+                "I feel bad because of poor grades .",
+                "I feel bad because of educational problem .",
+                "I feel bad because of dictatorial management ."
+            ],
+            "3": [
+                "I feel bad because of drug .",
+                "I feel bad because of medication .",
+                "I feel bad because of tumor .",
+                "I feel bad because of cancer .",
+                "I feel bad because of disease .",
+                "I feel bad because of alcohol addiction .",
+                "I feel bad because of smoke ."
+            ],
+            "4": [
+                "I feel bad because of bad parenting .",
+                "I feel bad because of breakups .",
+                "I feel bad because of divorce .",
+                "I feel bad because of mistrust .",
+                "I feel bad because of jealousy .",
+                "I feel bad because of betrayal .",
+                "I feel bad because of conflict .",
+                "I feel bad because of fight .",
+                "I feel bad because of childhood trauma ."
+            ],
+            "5": [
+                "I feel bad because of worthless .",
+                "I feel bad because of lonely .",
+                "I feel bad because of tired  of daily .",
+                "I feel bad because of powerless .",
+                "I feel bad because of normless .",
+                "I feel bad because of  isolation .",
+                "I feel bad because of estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6095704187058184,
+        "except_0_class_is_key_stc_accuracy": 0.6095704187058184,
+        "negative_threshold": 0.5045045045045045
+    }
+]

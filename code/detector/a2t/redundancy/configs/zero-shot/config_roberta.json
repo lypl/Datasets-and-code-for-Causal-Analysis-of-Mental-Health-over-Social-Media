@@ -1,0 +1,73 @@
+[
+    {
+        "name": "roberta-large-mnli",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/roberta-large-mnli",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "use_threshold": false,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm so sad because of no reason ."
+            ],
+            "1": [
+                "it's all due to body shame .",
+                "it's all due to physical abuse .",
+                "it's all due to sexual abuse .",
+                "it's all due to emotional abuse ."
+            ],
+            "2": [
+                "I'm alone because of loans .",
+                "I'm alone because of poverty .",
+                "I'm alone because of financial problem .",
+                "I'm alone because of unemployment .",
+                "I'm alone because of bully .",
+                "I'm alone because of  gossip .",
+                "I'm alone because of bad job .",
+                "I'm alone because of poor grades .",
+                "I'm alone because of educational problem .",
+                "I'm alone because of dictatorial management ."
+            ],
+            "3": [
+                "I don't understand drug .",
+                "I don't understand medication .",
+                "I don't understand tumor .",
+                "I don't understand cancer .",
+                "I don't understand disease .",
+                "I don't understand alcohol addiction .",
+                "I don't understand smoke ."
+            ],
+            "4": [
+                "I don't understand bad parenting .",
+                "I don't understand breakup .",
+                "I don't understand divorce .",
+                "I don't understand mistrust .",
+                "I don't understand jealousy .",
+                "I don't understand betrayal .",
+                "I don't understand conflict .",
+                "I don't understand fight .",
+                "I don't understand childhood trauma ."
+            ],
+            "5": [
+                "and it's due to worthless .",
+                "and it's due to lonely .",
+                "and it's due to tired  of daily .",
+                "and it's due to powerless .",
+                "and it's due to normless .",
+                "and it's due to  isolation .",
+                "and it's due to estrangement ."
+            ]
+        }
+    }
+]

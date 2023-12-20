@@ -1,0 +1,81 @@
+一套数据的生成过程：
+⭐采用筛选句子有一个缺点：对于不能直接从句子中的具体语段得到解释的，需要多个句子/全文连起来看的会有问题，所以全文和缩短后的结果可以做一个集成
+1. 针对该数据的模板
+    项目“prompt_boosting”中已经生成好的76: /home/lypl/PromptBoosting/templates/full_templates/t5_sorted_social
+2. 训练长文本分类的数据 和 训练测试打分器的数据
+    最初始的cvs数据：/home/lypl/trldc-main/data/CAMS_raw_data
+    ↓
+    项目“social_stc_score”.process_data.py: 
+        (1) 用于训练打分器的数据：
+            处理成：按prop把raw_train分成train、dev，raw_test处理成test，数据格式：
+                ret = {
+                    'text': text,
+                    'sentences': stcs,
+                    'labels': labels,
+                    'interpretations': ipts,
+                    'annotation': annotations
+                }
+            train\dev 放在："/media/data/3/lyp/CAM_stc_score_dataset/prop_"+str(prop)
+            test 放在："/media/data/3/lyp/CAM_stc_score_dataset"
+        (2) 同（1）的分割，用于原始训练长文本分类器的数据：
+            处理成：train、dev、test，数据格式：
+                ret = {
+                    'text': str,
+                    'labels': ['x']
+                }
+            放在：'/home/lypl/trldc-main/data/CAMS_json_data_'+str(prop)+"ori"
+        (3) 同（1）的分割，用于仅过滤后的训练长文本分类器的训数据：
+            处理成：train、dev，数据格式：
+                ret = {
+                    'text': str,
+                    'labels': ['x']
+                }
+            放在：'/home/lypl/trldc-main/data/CAMS_json_data_'+str(prop)+"filted"
+    ↓
+    项目“social_stc_score”.get_nli_dataset.py: （只涉及train、dev）
+        (1) 运行5次，给每个类生成模板：从所有template中每个类随机选10个模板，每个模板的label words从预定义的mapping中随机填入：
+            放在：/home/lypl/social_stc_score/a2t/relation_classification/templates_mappings.json
+        (2) 每种模板组合（共5种），用"/media/data/3/lyp/CAM_stc_score_dataset/prop_"+str(prop)里的train、dev分别生成用于NLI的数据：
+            每个样本的各个句子和模板拼接，label是该句子是否包含解释（是否是关键句）
+            数据格式：{
+                'sentence1': 句子，
+                'sentence2': 模板，
+                'label': 0/1/2
+            }
+            放在：'/media/data/3/lyp/CAM_stc_score_dataset/for_NLI_train/prop_'+str(prop)【train_config_x.json中填入的train、dev数据位置】
+        (3) 根据5个template_mapping 构造对应的config,还需要在得到ckpt后获得ckpt-path：xxx,并复制多条在多个ckpt上推断:
+            放在：/home/lypl/social_stc_score/a2t/relation_classification/configs
+
+        每次需要改的地方：in_train_path | in_dev_path | nli_data_output_dir 后面的prop，根据上一步的改
+    ↓
+    项目“social_stc_score”.run_glue.py:
+        ckpt路径：/media/data/3/lyp/stc_score_ckpt/0|1|2|3|4/checkpoint-xxxx
+    ↓
+    项目“social_stc_score”.process_test_data.py: （只涉及test、没有key_stcs的train和dev）
+        把"/media/data/3/lyp/CAM_stc_score_dataset/test.json"处理成用于关系抽取推理的格式：
+        ret = {
+            "text_id": text_id,
+            "token": stc,
+            "relation": annotation,
+            "is_key": label
+        }
+        放在："/media/data/3/lyp/CAM_stc_score_dataset/test_nli.json"、train_no_key_stc_nli.json、dev_no_key_stc_nli.json
+    ↓
+    项目“social_stc_score”.run_evaluation.py:
+        "/media/data/3/lyp/CAM_stc_score_dataset/test_nli.json"、train_no_key_stc_nli.json、dev_no_key_stc_nli.json作为测试数据
+        修改代码前要 pip install a2t
+        输出：
+        (1) /home/lypl/social_stc_score/a2t/relation_classification/experiments 将test中的每个句子分为的类别保存在output中
+        (2) 计算的accuracy : /home/lypl/social_stc_score/a2t/relation_classification/configs的各自config中
+    ↓
+    项目“social_stc_score”.filt_document_to_dataset.py:
+        将原始test的text抽出key句子，合成新的test数据
+        需要每次修改：
+            (1)pred_path(test\dev\train) ：选择哪个ckpt产生的output结果
+            (2)test_out_dir ：用哪个prop训练出的打分器对应的分割
+        放在："/home/lypl/trldc-main/data/CAMS_json_data_"+str(prop)+"filted"
+
+3. 最终的6分类结果 
+    项目“trldc-main”对应目录
+    bash sample0.sh
+    /media/data/3/lyp/CAMS_result 和 sample0.json的运行结果tmux上显示

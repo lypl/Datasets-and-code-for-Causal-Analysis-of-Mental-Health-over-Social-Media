@@ -1,0 +1,367 @@
+[
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "It's due to no reason ."
+            ],
+            "1": [
+                "It's due to body shame .",
+                "It's due to physical abuse .",
+                "It's due to sexual abuse .",
+                "It's due to emotional abuse ."
+            ],
+            "2": [
+                "It's due to loans .",
+                "It's due to poor .",
+                "It's due to financial problem .",
+                "It's due to unemployment .",
+                "It's due to bully .",
+                "It's due to  gossip .",
+                "It's due to bad job .",
+                "It's due to poor grades .",
+                "It's due to educational problem .",
+                "It's due to dictatorial management ."
+            ],
+            "3": [
+                "It's due to drug .",
+                "It's due to medication .",
+                "It's due to tumor .",
+                "It's due to cancer .",
+                "It's due to disease .",
+                "It's due to alcohol addiction .",
+                "It's due to smoke ."
+            ],
+            "4": [
+                "It's due to bad parenting .",
+                "It's due to breakups .",
+                "It's due to divorce .",
+                "It's due to mistrust .",
+                "It's due to jealousy .",
+                "It's due to betrayal .",
+                "It's due to conflict .",
+                "It's due to fight .",
+                "It's due to childhood trauma ."
+            ],
+            "5": [
+                "It's due to worthless .",
+                "It's due to lonely .",
+                "It's due to tired  of daily .",
+                "It's due to powerless .",
+                "It's due to normless .",
+                "It's due to  isolation .",
+                "It's due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6212615551930397,
+        "except_0_class_is_key_stc_accuracy": 0.6212615551930397,
+        "negative_threshold": 0.3113113113113113
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-1000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "It's due to no reason ."
+            ],
+            "1": [
+                "It's due to body shame .",
+                "It's due to physical abuse .",
+                "It's due to sexual abuse .",
+                "It's due to emotional abuse ."
+            ],
+            "2": [
+                "It's due to loans .",
+                "It's due to poor .",
+                "It's due to financial problem .",
+                "It's due to unemployment .",
+                "It's due to bully .",
+                "It's due to  gossip .",
+                "It's due to bad job .",
+                "It's due to poor grades .",
+                "It's due to educational problem .",
+                "It's due to dictatorial management ."
+            ],
+            "3": [
+                "It's due to drug .",
+                "It's due to medication .",
+                "It's due to tumor .",
+                "It's due to cancer .",
+                "It's due to disease .",
+                "It's due to alcohol addiction .",
+                "It's due to smoke ."
+            ],
+            "4": [
+                "It's due to bad parenting .",
+                "It's due to breakups .",
+                "It's due to divorce .",
+                "It's due to mistrust .",
+                "It's due to jealousy .",
+                "It's due to betrayal .",
+                "It's due to conflict .",
+                "It's due to fight .",
+                "It's due to childhood trauma ."
+            ],
+            "5": [
+                "It's due to worthless .",
+                "It's due to lonely .",
+                "It's due to tired  of daily .",
+                "It's due to powerless .",
+                "It's due to normless .",
+                "It's due to  isolation .",
+                "It's due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.623436650353453,
+        "except_0_class_is_key_stc_accuracy": 0.623436650353453,
+        "negative_threshold": 0.3113113113113113
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-1500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "It's due to no reason ."
+            ],
+            "1": [
+                "It's due to body shame .",
+                "It's due to physical abuse .",
+                "It's due to sexual abuse .",
+                "It's due to emotional abuse ."
+            ],
+            "2": [
+                "It's due to loans .",
+                "It's due to poor .",
+                "It's due to financial problem .",
+                "It's due to unemployment .",
+                "It's due to bully .",
+                "It's due to  gossip .",
+                "It's due to bad job .",
+                "It's due to poor grades .",
+                "It's due to educational problem .",
+                "It's due to dictatorial management ."
+            ],
+            "3": [
+                "It's due to drug .",
+                "It's due to medication .",
+                "It's due to tumor .",
+                "It's due to cancer .",
+                "It's due to disease .",
+                "It's due to alcohol addiction .",
+                "It's due to smoke ."
+            ],
+            "4": [
+                "It's due to bad parenting .",
+                "It's due to breakups .",
+                "It's due to divorce .",
+                "It's due to mistrust .",
+                "It's due to jealousy .",
+                "It's due to betrayal .",
+                "It's due to conflict .",
+                "It's due to fight .",
+                "It's due to childhood trauma ."
+            ],
+            "5": [
+                "It's due to worthless .",
+                "It's due to lonely .",
+                "It's due to tired  of daily .",
+                "It's due to powerless .",
+                "It's due to normless .",
+                "It's due to  isolation .",
+                "It's due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.620174007612833,
+        "except_0_class_is_key_stc_accuracy": 0.620174007612833,
+        "negative_threshold": 0.3133133133133133
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-2000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "It's due to no reason ."
+            ],
+            "1": [
+                "It's due to body shame .",
+                "It's due to physical abuse .",
+                "It's due to sexual abuse .",
+                "It's due to emotional abuse ."
+            ],
+            "2": [
+                "It's due to loans .",
+                "It's due to poor .",
+                "It's due to financial problem .",
+                "It's due to unemployment .",
+                "It's due to bully .",
+                "It's due to  gossip .",
+                "It's due to bad job .",
+                "It's due to poor grades .",
+                "It's due to educational problem .",
+                "It's due to dictatorial management ."
+            ],
+            "3": [
+                "It's due to drug .",
+                "It's due to medication .",
+                "It's due to tumor .",
+                "It's due to cancer .",
+                "It's due to disease .",
+                "It's due to alcohol addiction .",
+                "It's due to smoke ."
+            ],
+            "4": [
+                "It's due to bad parenting .",
+                "It's due to breakups .",
+                "It's due to divorce .",
+                "It's due to mistrust .",
+                "It's due to jealousy .",
+                "It's due to betrayal .",
+                "It's due to conflict .",
+                "It's due to fight .",
+                "It's due to childhood trauma ."
+            ],
+            "5": [
+                "It's due to worthless .",
+                "It's due to lonely .",
+                "It's due to tired  of daily .",
+                "It's due to powerless .",
+                "It's due to normless .",
+                "It's due to  isolation .",
+                "It's due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.6155519303969549,
+        "except_0_class_is_key_stc_accuracy": 0.6155519303969549,
+        "negative_threshold": 0.4114114114114114
+    },
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-2500",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "It's due to no reason ."
+            ],
+            "1": [
+                "It's due to body shame .",
+                "It's due to physical abuse .",
+                "It's due to sexual abuse .",
+                "It's due to emotional abuse ."
+            ],
+            "2": [
+                "It's due to loans .",
+                "It's due to poor .",
+                "It's due to financial problem .",
+                "It's due to unemployment .",
+                "It's due to bully .",
+                "It's due to  gossip .",
+                "It's due to bad job .",
+                "It's due to poor grades .",
+                "It's due to educational problem .",
+                "It's due to dictatorial management ."
+            ],
+            "3": [
+                "It's due to drug .",
+                "It's due to medication .",
+                "It's due to tumor .",
+                "It's due to cancer .",
+                "It's due to disease .",
+                "It's due to alcohol addiction .",
+                "It's due to smoke ."
+            ],
+            "4": [
+                "It's due to bad parenting .",
+                "It's due to breakups .",
+                "It's due to divorce .",
+                "It's due to mistrust .",
+                "It's due to jealousy .",
+                "It's due to betrayal .",
+                "It's due to conflict .",
+                "It's due to fight .",
+                "It's due to childhood trauma ."
+            ],
+            "5": [
+                "It's due to worthless .",
+                "It's due to lonely .",
+                "It's due to tired  of daily .",
+                "It's due to powerless .",
+                "It's due to normless .",
+                "It's due to  isolation .",
+                "It's due to estrangement ."
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.610657966286025,
+        "except_0_class_is_key_stc_accuracy": 0.610657966286025,
+        "negative_threshold": 0.4974974974974975
+    }
+]

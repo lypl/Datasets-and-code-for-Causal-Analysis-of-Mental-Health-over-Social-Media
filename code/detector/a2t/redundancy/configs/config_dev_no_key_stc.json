@@ -1,0 +1,97 @@
+[
+    {
+        "name": "experiment_name",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "/media/data/3/lyp/stc_score_ckpt/3/checkpoint-1000",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "use_threshold": false,
+        "entailment_position": 2,
+        "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "template_mapping": {
+            "0": [
+                "I'm sad due to no reason .",
+                "I'm sad due to no reason .",
+                "I feel bad because of no reason .",
+                "I feel like dying because of no reason .",
+                "I guess it is due to no reason .",
+                "I guess it is due to no reason .",
+                "I hate myself because of no reason .",
+                "I'm leaving due to no reason .",
+                "I want to die due to no reason .",
+                "I'm scared of no reason ."
+            ],
+            "1": [
+                "I'm scared due to sexual abuse .",
+                "and it's due to emotional abuse .",
+                "I lost my job due to body shame .",
+                "It's all due to sexual abuse .",
+                "I'm scared of body shame .",
+                "I'm angry because of body shame .",
+                "I guess it is due to body shame .",
+                "I lost my job due to emotional abuse .",
+                "I can't move because of sexual abuse .",
+                "I'm depressed due to emotional abuse ."
+            ],
+            "2": [
+                "and it's all because of unemployment .",
+                "I feel bad because of poor .",
+                "I can't live due to bully .",
+                "I just want to die because of  gossip .",
+                "I'm so sad because of educational problem .",
+                "I'm afraid due to  gossip .",
+                "I am here because of poor grades .",
+                "I need help due to educational problem .",
+                "I'm scared of educational problem .",
+                "I'm suffering due to unemployment ."
+            ],
+            "3": [
+                "I'm afraid due to drug .",
+                "I'm not happy due to smoke .",
+                "I'm struggling due to drug .",
+                "It's because of disease !",
+                ". It is due to alcohol addiction .",
+                "I lost my job due to medication .",
+                "I'm here due to smoke .",
+                "I'm afraid due to smoke .",
+                "I'm sick due to cancer .",
+                "I'm alone because of cancer ."
+            ],
+            "4": [
+                "It's all due to jealousy .",
+                "I'm sick of mistrust .",
+                "It's because of betrayal !",
+                "I've lost my job due to conflict .",
+                "It's all due to jealousy .",
+                "It's because of jealousy !",
+                "It's just because of childhood trauma .",
+                "I don't understand conflict .",
+                "I hate myself because of conflict .",
+                "I'm sick due to breakups ."
+            ],
+            "5": [
+                "I'm here due to  isolation .",
+                "I have nothing because of estrangement .",
+                "I have nothing because of tired  of daily .",
+                "I don't understand normless .",
+                "It's all due to  isolation .",
+                "I'm here due to estrangement .",
+                "This is all due to worthless .",
+                "I'm afraid due to worthless .",
+                "I am not happy because of worthless .",
+                "It's because of normless !"
+            ]
+        },
+        "all_class_is_key_stc_accuracy": 0.5642317380352645,
+        "except_0_class_is_key_stc_accuracy": 0.5289608177172062
+    }
+]

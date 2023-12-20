@@ -1,0 +1,358 @@
+[
+    {
+        "name": "tolog",
+        "log_dir": "/home/lypl/A2TRetacred_ori/a2t/relation_classification/log",
+        "log_name": "random_single_tpl_per_rel",
+        "classification_model": "mnli-mapping",
+        "pretrained_model": "roberta-large-mnli",
+        "batch_size": 2,
+        "multiclass": true,
+        "use_cuda": true,
+        "half": true,
+        "entailment_position": 2,
+        "labels": [
+            "no_relation",
+            "org:members",
+            "per:siblings",
+            "per:spouse",
+            "org:country_of_branch",
+            "per:country_of_death",
+            "per:parents",
+            "per:stateorprovinces_of_residence",
+            "org:top_members/employees",
+            "org:dissolved",
+            "org:number_of_employees/members",
+            "per:stateorprovince_of_death",
+            "per:origin",
+            "per:children",
+            "org:political/religious_affiliation",
+            "per:city_of_birth",
+            "per:title",
+            "org:shareholders",
+            "per:employee_of",
+            "org:member_of",
+            "org:founded_by",
+            "per:countries_of_residence",
+            "per:other_family",
+            "per:religion",
+            "per:identity",
+            "per:date_of_birth",
+            "org:city_of_branch",
+            "org:alternate_names",
+            "org:website",
+            "per:cause_of_death",
+            "org:stateorprovince_of_branch",
+            "per:schools_attended",
+            "per:country_of_birth",
+            "per:date_of_death",
+            "per:city_of_death",
+            "org:founded",
+            "per:cities_of_residence",
+            "per:age",
+            "per:charges",
+            "per:stateorprovince_of_birth"
+        ],
+        "template_mapping": {
+            "no_relation": [
+                "{subj} and {obj} are not related"
+            ],
+            "org:members": [
+                "{obj} joined {subj}"
+            ],
+            "per:siblings": [
+                "{subj} and {obj} are siblings"
+            ],
+            "per:spouse": [
+                "{subj} is the wife of {obj}"
+            ],
+            "org:country_of_branch": [
+                "{subj} is located in {obj}"
+            ],
+            "per:country_of_death": [
+                "{subj} died in {obj}"
+            ],
+            "per:parents": [
+                "{subj} is the daughter of {obj}"
+            ],
+            "per:stateorprovinces_of_residence": [
+                "{subj} has a legal order to stay in {obj}"
+            ],
+            "org:top_members/employees": [
+                "{obj} is chairman of {subj}"
+            ],
+            "org:dissolved": [
+                "{subj} dissolved in {obj}"
+            ],
+            "org:number_of_employees/members": [
+                "{subj} employs nearly {obj} people"
+            ],
+            "per:stateorprovince_of_death": [
+                "{subj} died in {obj}"
+            ],
+            "per:origin": [
+                "{obj} is the nationality of {subj}"
+            ],
+            "per:children": [
+                "{subj} is the mother of {obj}"
+            ],
+            "org:political/religious_affiliation": [
+                "{subj} has religious affiliation with {obj}"
+            ],
+            "per:city_of_birth": [
+                "{subj} was born in {obj}"
+            ],
+            "per:title": [
+                "{subj} is a {obj}"
+            ],
+            "org:shareholders": [
+                "{obj} holds shares in {subj}"
+            ],
+            "per:employee_of": [
+                "{subj} is an employee of {obj}"
+            ],
+            "org:member_of": [
+                "{subj} is member of {obj}"
+            ],
+            "org:founded_by": [
+                "{obj} founded {subj}"
+            ],
+            "per:countries_of_residence": [
+                "{subj} lives in {obj}"
+            ],
+            "per:other_family": [
+                "{subj} is the grandson of {obj}"
+            ],
+            "per:religion": [
+                "{subj} believe in {obj}"
+            ],
+            "per:identity": [
+                "{subj} is also known as {obj}"
+            ],
+            "per:date_of_birth": [
+                "{subj}'s birthday is on {obj}"
+            ],
+            "org:city_of_branch": [
+                "{subj} is located in {obj}"
+            ],
+            "org:alternate_names": [
+                "{subj} is also known as {obj}"
+            ],
+            "org:website": [
+                "{obj} is the website of {subj}"
+            ],
+            "per:cause_of_death": [
+                "{obj} is the cause of {subj}'s death"
+            ],
+            "org:stateorprovince_of_branch": [
+                "{subj} is located in {obj}"
+            ],
+            "per:schools_attended": [
+                "{subj} graduated from {obj}"
+            ],
+            "per:country_of_birth": [
+                "{subj} was born in {obj}"
+            ],
+            "per:date_of_death": [
+                "{subj} died in {obj}"
+            ],
+            "per:city_of_death": [
+                "{subj} died in {obj}"
+            ],
+            "org:founded": [
+                "{subj} was formed in {obj}"
+            ],
+            "per:cities_of_residence": [
+                "{subj} lives in {obj}"
+            ],
+            "per:age": [
+                "{subj} is {obj} years old"
+            ],
+            "per:charges": [
+                "{obj} are the charges of {subj}"
+            ],
+            "per:stateorprovince_of_birth": [
+                "{subj} was born in {obj}"
+            ]
+        },
+        "valid_conditions": {
+            "org:founded_by": [
+                "ORGANIZATION:PERSON"
+            ],
+            "per:identity": [
+                "PERSON:PERSON",
+                "PERSON:MISC"
+            ],
+            "org:alternate_names": [
+                "ORGANIZATION:ORGANIZATION",
+                "ORGANIZATION:MISC"
+            ],
+            "per:children": [
+                "PERSON:PERSON"
+            ],
+            "per:origin": [
+                "PERSON:NATIONALITY",
+                "PERSON:COUNTRY",
+                "PERSON:LOCATION"
+            ],
+            "per:countries_of_residence": [
+                "PERSON:COUNTRY",
+                "PERSON:NATIONALITY"
+            ],
+            "per:employee_of": [
+                "PERSON:ORGANIZATION"
+            ],
+            "per:title": [
+                "PERSON:TITLE"
+            ],
+            "org:city_of_branch": [
+                "ORGANIZATION:CITY",
+                "ORGANIZATION:LOCATION"
+            ],
+            "per:religion": [
+                "PERSON:RELIGION"
+            ],
+            "per:age": [
+                "PERSON:DURATION",
+                "PERSON:NUMBER"
+            ],
+            "per:date_of_death": [
+                "PERSON:DATE"
+            ],
+            "org:website": [
+                "ORGANIZATION:URL"
+            ],
+            "per:stateorprovinces_of_residence": [
+                "PERSON:STATE_OR_PROVINCE"
+            ],
+            "org:top_members/employees": [
+                "ORGANIZATION:PERSON"
+            ],
+            "org:number_of_employees/members": [
+                "ORGANIZATION:NUMBER"
+            ],
+            "org:members": [
+                "ORGANIZATION:ORGANIZATION",
+                "ORGANIZATION:COUNTRY"
+            ],
+            "org:country_of_branch": [
+                "ORGANIZATION:COUNTRY"
+            ],
+            "per:spouse": [
+                "PERSON:PERSON"
+            ],
+            "org:stateorprovince_of_branch": [
+                "ORGANIZATION:STATE_OR_PROVINCE"
+            ],
+            "org:political/religious_affiliation": [
+                "ORGANIZATION:IDEOLOGY",
+                "ORGANIZATION:RELIGION"
+            ],
+            "org:member_of": [
+                "ORGANIZATION:LOCATION",
+                "ORGANIZATION:ORGANIZATION",
+                "ORGANIZATION:STATE_OR_PROVINCE",
+                "ORGANIZATION:COUNTRY"
+            ],
+            "per:siblings": [
+                "PERSON:PERSON"
+            ],
+            "per:stateorprovince_of_birth": [
+                "PERSON:STATE_OR_PROVINCE"
+            ],
+            "org:dissolved": [
+                "ORGANIZATION:DATE"
+            ],
+            "per:other_family": [
+                "PERSON:PERSON"
+            ],
+            "org:shareholders": [
+                "ORGANIZATION:PERSON",
+                "ORGANIZATION:ORGANIZATION"
+            ],
+            "per:parents": [
+                "PERSON:PERSON"
+            ],
+            "per:charges": [
+                "PERSON:CRIMINAL_CHARGE"
+            ],
+            "per:schools_attended": [
+                "PERSON:ORGANIZATION"
+            ],
+            "per:cause_of_death": [
+                "PERSON:CAUSE_OF_DEATH"
+            ],
+            "per:city_of_death": [
+                "PERSON:LOCATION",
+                "PERSON:CITY"
+            ],
+            "per:stateorprovince_of_death": [
+                "PERSON:STATE_OR_PROVICE"
+            ],
+            "org:founded": [
+                "ORGANIZATION:DATE"
+            ],
+            "per:country_of_death": [
+                "PERSON:COUNTRY"
+            ],
+            "per:country_of_birth": [
+                "PERSON:COUNTRY"
+            ],
+            "per:date_of_birth": [
+                "PERSON:DATE"
+            ],
+            "per:cities_of_residence": [
+                "PERSON:CITY",
+                "PERSON:LOCATION"
+            ],
+            "per:city_of_birth": [
+                "PERSON:CITY"
+            ]
+        },
+        "precision": 0.6804960195958358,
+        "recall": 0.7870042492917847,
+        "f1-score": 0.7298850574712644,
+        "top-1": 0.8326841359773371,
+        "top-3": 0.9805240793201133,
+        "top-5": 0.9918555240793201,
+        "negative_threshold": 0.13813813813813813,
+        "f1_by_relation": {
+            "org:members": 0.3366336633663366,
+            "per:siblings": 0.4578313253012048,
+            "per:spouse": 0.5365853658536586,
+            "org:country_of_branch": 0.8938906752411575,
+            "per:country_of_death": 0.923076923076923,
+            "per:parents": 0.47126436781609193,
+            "org:top_members/employees": 0.18348623853211013,
+            "org:dissolved": 0.33333333333333337,
+            "org:number_of_employees/members": 0.9600000000000001,
+            "per:stateorprovince_of_death": 0.9333333333333333,
+            "per:origin": 0.46956521739130436,
+            "per:children": 0.288,
+            "org:political/religious_affiliation": 0.5128205128205129,
+            "per:city_of_birth": 0.4117647058823529,
+            "per:title": 0.882249560632689,
+            "org:shareholders": 0.1917808219178082,
+            "per:employee_of": 0.8388059701492537,
+            "org:member_of": 0.5063291139240507,
+            "org:founded_by": 0.5842696629213483,
+            "per:countries_of_residence": 0.4958677685950413,
+            "per:other_family": 0.03278688524590165,
+            "per:religion": 0.7863247863247863,
+            "per:identity": 0.7798085291557875,
+            "per:date_of_birth": 0.3684210526315789,
+            "org:city_of_branch": 0.9725490196078431,
+            "org:alternate_names": 0.9276218611521418,
+            "org:website": 1.0,
+            "per:cause_of_death": 0.8409090909090909,
+            "org:stateorprovince_of_branch": 0.9473684210526315,
+            "per:schools_attended": 0.3333333333333333,
+            "per:date_of_death": 0.7692307692307692,
+            "per:city_of_death": 0.7241379310344829,
+            "org:founded": 0.9855072463768115,
+            "per:cities_of_residence": 0.6931407942238267,
+            "per:age": 0.8488612836438925,
+            "per:charges": 0.8872727272727273,
+            "per:stateorprovince_of_birth": 0.2571428571428572
+        }
+    }
+]
